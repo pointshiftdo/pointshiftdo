@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>LAUNCHD_SERVICE_NAME</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>LAUNCHD_BIN_PATH</string>
+    <string>LAUNCHD_EXEC_PATH</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>LAUNCHD_LOGS_STDOUT_PATH</string>
+  <key>StandardErrorPath</key>
+  <string>LAUNCHD_LOGS_STDERR_PATH</string>
+</dict>
+</plist>
