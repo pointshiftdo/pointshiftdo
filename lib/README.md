@@ -6,10 +6,9 @@ inspired by the [stb style](https://github.com/nothings/stb/blob/master/docs/stb
 ## fullsendx
 
 As a CLI utility, takes macOS permission grants to wrap around other binaries.
-The `launchd` workflow is useful for long-running services.
-
-As a library, enables programs to reuse the permission requests after
-validating their applicability.
+The `launchd` workflow is useful for long-running services. As a library,
+enables programs to reuse the permission requests after validating their
+applicability.
 
 **WARNING:** `fullsendx` opens potential security risks, as its intention is
 to bypass macOS authorization mechanisms in a centralized way.
@@ -30,7 +29,7 @@ in `Terminal.app` if you forget to turn it off.
 
 ### Usage
 
-Single-invocation workflow:
+Single-invocation CLI workflow:
 
 ```sh
 # full path:
@@ -40,7 +39,7 @@ make X=$EXEC_BIN_PATH
 make X=$(which $EXEC_BIN)
 ```
 
-`launchd` workflow:
+`launchd` service workflow:
 
 ```sh
 make installd X=$EXEC_BIN_PATH
